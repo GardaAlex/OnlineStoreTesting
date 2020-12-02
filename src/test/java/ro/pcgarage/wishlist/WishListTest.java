@@ -15,7 +15,7 @@ public class WishListTest extends TestBase {
     @Test
     public void addToWishList() throws InterruptedException {
         openHomepage();
-        driver.findElement(By.className("menu_col")).click();
+        driver.findElement(By.xpath("//*[@class='product-name']")).click();
         driver.findElement(By.className("my-0")).click();
         driver.findElement(By.id("addto_plus")).click();
         driver.findElement(By.xpath("//*[@id=\"addto_content\"]/p[1]/a/text()")).click();

@@ -23,7 +23,7 @@ public class TestBase {
 
     @After
     public void tearDown() {
-       // driver.quit();
+        driver.quit();
     }
 
     public void openHomepage(){
