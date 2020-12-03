@@ -40,7 +40,6 @@ public class SearchTest extends TestBase{
         Header header = PageFactory.initElements(driver, Header.class);
 
         header.search(searchKeyword);
-        header.login();
 
         ProductsList productsList = PageFactory.initElements(driver, ProductsList.class);
 

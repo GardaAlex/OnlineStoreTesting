@@ -24,7 +24,7 @@ public class Header {
     public WebElement getLoginLink() {
         return loginLink;
     }
-    public void login() {
+    public void loginPage() {
         loginLink.click();
     }
 }

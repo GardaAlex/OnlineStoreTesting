@@ -18,7 +18,7 @@ public class RegisterTest extends TestBase{
     public void registerNewUser() {
         Header header = PageFactory.initElements(driver, Header.class);
         openHomepage();
-        header.login();
+        header.loginPage();
         driver.findElement(By.id("newfirstname")).sendKeys("Ion");
         driver.findElement(By.name("newlastname")).sendKeys("ION");
         driver.findElement(By.name("telephone")).sendKeys("0755555555");
