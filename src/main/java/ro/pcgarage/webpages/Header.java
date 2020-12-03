@@ -27,5 +27,4 @@ public class Header {
     public void login() {
         loginLink.click();
     }
-
 }
