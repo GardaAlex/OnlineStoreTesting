@@ -11,7 +11,9 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
     protected WebDriver driver = null;
-
+    public void openHomepage(){
+        driver.get(AppConfig.getSiteUrl());
+    }
     @Before
     public void setup() {
         String browser = System.getProperty("browser", "chrome");
@@ -21,12 +23,8 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+   @After
+      public void tearDown() { driver.quit(); }
 
-    public void openHomepage(){
-        driver.get(AppConfig.getSiteUrl());
-    }
+
 }

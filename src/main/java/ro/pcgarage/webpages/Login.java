@@ -24,7 +24,7 @@ public class Login {
     }
 
     public void password() {
-        loginField.sendKeys("1234" + Keys.ENTER);
+        passwordField.sendKeys("1234" + Keys.ENTER);
     }
 
 }
